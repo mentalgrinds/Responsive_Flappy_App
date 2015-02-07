@@ -1,6 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
 /* base tags */
 
 html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px/1.2;
+  box-sizing: border-box;
+
+
+
 
 }
 
@@ -8,17 +16,52 @@ body {
 
 }
 
+header {
+  color: #1ACAC8;
+  background: #25262C url('../images/border.png') repeat-x top;
+  height: 160px;
+  clear: both;
+}
+
+
+
 
 /* top nav */
+
+.top-nav-full {
+  display: none;
+}
 
 
 
 /* body */
 
-/* bottom nav */
+section {
+  color: #25262C;
+  clear: both;
+}
 
 /* footer */
 
+footer {
+  color: #1ACAC8;  
+  background: #25262C url('../images/border.png') repeat-x top;
+  clear: both;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* bottom nav */
+.bottom-nav ul {
+  display: inline-block;
+  width: 50%;
+}
+
+.bottom-nav ul.mobile-hidden {
+  display: none;
+}
 
 
 
@@ -26,6 +69,15 @@ body {
 
 
 @media only screen and (min-width: 768px) {
+
+  .bottom-nav ul {
+    width: 33.3%
+  }
+
+
+  .bottom-nav ul.mobile-hidden {
+    display: inline-block;
+  }
 
 }
 
